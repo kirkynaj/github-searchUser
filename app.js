@@ -10,7 +10,7 @@ searchUser.addEventListener('keyup', (e) => {
     const userText = e.target.value;
 
     if (userText !== '') {
-        GitHub.getUser(userText)
+        github.getUser(userText)
         .then(data => {
             if (data.profile.message === 'Not Found') {
                ui.showAlert('User no found', 'alert alert-danger');

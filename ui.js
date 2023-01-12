@@ -64,7 +64,7 @@ class UI {
         container.insertBefore(div, search);
 
         setTimeout(() => {
-            this.clearAlert
+            this.clearAlert();
         }, 3000);
     }
 
